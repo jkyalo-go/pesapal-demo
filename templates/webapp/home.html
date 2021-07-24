@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>Donate Home</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'webapp/css/home.css' %}">
+    <script src="{% static 'fontawesome_free/js/all.min.js' %}"></script>
+    <script src="{% static 'webapp/js/home.js' %}"></script>
+</head>
+<body>
+<div class="upper-container">
+    <div class="container" style="margin: auto">
+        <h1>Donate</h1>
+        <p class="donor-form-error">{{ donor_form.non_field_errors }}</p>
+        <form name="donor-form" action="/" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <p>
+                <label for="id_first_name">{{donor_form.first_name.label}}<span class="donor-form-error">{{ donor_form.first_name.errors }}</span></label>
+                {{donor_form.first_name}}
+            </p>
+            <p>
+                <label for="id_last_name">{{donor_form.last_name.label}}<span class="donor-form-error">{{ donor_form.last_name.errors }}</span></label>
+                {{donor_form.last_name}}
+            </p>
+            <p>
+                <label for="id_email">{{donor_form.email.label}}<span class="donor-form-error">{{ donor_form.email.errors }}</span></label>
+                {{donor_form.email}}
+            </p>
+            <p>
+                <label for="id_amount">{{donor_form.amount.label}}<span class="donor-form-error">{{ donor_form.amount.errors }}</span></label>
+                {{donor_form.amount}}
+            </p>
+            <p>
+                <label for="id_bill_period">{{donor_form.bill_period.label}}<span class="donor-form-error">{{ donor_form.bill_period.errors }}</span></label>
+                {{donor_form.bill_period}}
+            </p>
+
+            <input type="submit" value="Donate">
+        </form>
+    </div>
+    <div class="container hidden" id="monthly-billing-container">
+    <h2>Billing Monthly</h2>
+        <p>
+            <label for="id_next_billing_date_monthly">{{donor_form.next_billing_date_monthly.label}}<span class="donor-form-error">{{ donor_form.next_billing_date_monthly.errors }}</span></label>
+            {{donor_form.next_billing_date_monthly}}
+        </p>
+    </div>
+    <div class="container hidden" id="annual-billing-container">
+    <h2>Billing Annual</h2>
+        <p>
+            <label for="id_next_billing_date_annual">{{donor_form.next_billing_date_annual.label}}<span class="donor-form-error">{{ donor_form.next_billing_date_annual.errors }}</span></label>
+            {{donor_form.next_billing_date_annual}}
+        </p>
+    </div>
+</div>
+</body>
+</html>
