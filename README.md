@@ -46,25 +46,25 @@ Start the installation by creating a virtual environment in your computer along 
 You may specify the python version when creating the virtual environment as follows `virtualenv -p <python-version> <virtualenv-name>`
 ## 4. Configuration
 
-Navigate to the project root folder and launch your terminal within the directory.
+* Navigate to the project root folder and launch your terminal within the directory.
 
-Activate the virtual environment using the command `source ./<venv/bin/activate`
+* Activate the virtual environment using the command `source ./<venv/bin/activate`
 
-Run `python manage.py makemigrations` to allow Django to propagate changes.
+* Run `python manage.py makemigrations` to allow Django to propagate changes.
 
-In order for database and schema creation run the following command `python manage.py migrate`
+* In order for database and schema creation run the following command `python manage.py migrate`
 
-At this point you need a to create a super user on the terminal by issuing the following commands. `python manage.py craetesuperuser`. Here you will prompted to enter an admin username, optional email and a password.
+* At this point you need a to create a super user on the terminal by issuing the following commands. `python manage.py craetesuperuser`. Here you will prompted to  enter an admin username, optional email and a password.
 
-Run the Django development server with the following command `python manage.py runserver` **Nb: Do not close this terminal as the django test server process is running in it.**
+* Run the Django development server with the following command `python manage.py runserver` **Nb: Do not close this terminal as the django test server process is running in it.**
 
-You also need to collect static assets with `python manage.py collectstatic`
+* You also need to collect static assets with `python manage.py collectstatic`
 
-Open your browser at [http://localhost:8000/admin](http://localhost:8000/admin) and use tha admin credentials that you just set up.
+* Open your browser at [http://localhost:8000/admin](http://localhost:8000/admin) and use tha admin credentials that you just set up.
 
-After login set up your pesapal consumer key and  consumer secret along with email credentials needed to set up a session for the purpose of emailing users who have set to an annual or monthly billing plan.
+* After login set up your pesapal consumer key and  consumer secret along with email credentials needed to set up a session for the purpose of emailing users who have set to an annual or monthly billing plan.
 
 ## 5. Usage tips
 
-Open your browser at [http://localhost:8000](http://localhost:8000) and the application should load.
+* Open your browser at [http://localhost:8000](http://localhost:8000) and the application should load.
 
