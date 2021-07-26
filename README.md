@@ -14,7 +14,7 @@ This application allows a donor to enter his name, email or phone number, amount
 
 ## 2. Requirements
 
-Here is a list of python libraries that are project dependencies.
+* Here is a list of python libraries that are project dependencies.
 >asgiref
 
 >certifi
@@ -39,11 +39,13 @@ also included in [requirements.txt](https://github.com/jkyalo-go/pesapal-demo/bl
 
 
 ## 3. Installation
-Start the installation by creating a virtual environment in your computer along with the listed requirements with `pip install <package-name>`
+* Start the installation by creating a virtual environment in your computer along with the listed requirements with `pip install <package-name>`
+* Ensure you are running install commands with the virtual environment activate.
 
 >**pip install Django**
 
-You may specify the python version when creating the virtual environment as follows `virtualenv -p <python-version> <virtualenv-name>`
+* You may specify the python version when creating the virtual environment as follows `virtualenv -p <python-version> <virtualenv-name>`
+
 ## 4. Configuration
 
 * Navigate to the project root folder and launch your terminal within the directory.
