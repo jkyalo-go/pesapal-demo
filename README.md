@@ -46,6 +46,14 @@ Start the installation by creating a virtual environment in your computer along 
 You may specify the python version when creating the virtual environment as follows `virtualenv -p <python-version> <virtualenv-name>`
 ## 4. Configuration
 
+Navigate to the project root folder and launch your terminal within the directory.
+
+Activate the virtual environment using the command `source ./<venv/bin/activate`
+
+Run `python manage.py makemigrations` to allow Django to propagate changes.
+
+In order for database and schema creation run the following command `python manage.py migrate`
+
 ## 5. Usage tips
 
 [Evataa](http://evataa.com)
