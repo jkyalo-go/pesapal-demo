@@ -3,16 +3,14 @@
 #### Table of contents
 
 1. [ Introduction ](#intro)
-
-This application allows a donor to enter his name, email or phone number, amount and set a period of time for their donation as: One-off, Monthly and Annual. It uses the PesaPal live APIs to complete payments. The application has an administrative panel where an admin can login and set their PesaPal consumer key and consumer secret needed for authenticating requests.
-
-
 2. [ Requirements ](#req)
 3. [ Installation ](#install)
 4. [ Configuration ](#conf)
 5. [ Usage tips. ](#usage)
 
 ## 1. Introduction
+
+This application allows a donor to enter his name, email or phone number, amount and set a period of time for their donation as: One-off, Monthly and Annual. It uses the PesaPal live APIs to complete payments. The application has an administrative panel where an admin can login and set their PesaPal consumer key and consumer secret needed for authenticating requests.
 
 ## 2. Requirements
 
