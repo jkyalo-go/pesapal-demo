@@ -35,6 +35,8 @@ Here is a list of python libraries that are project dependencies.
 
 >urllib3
 
+also included in [requirements.txt](https://github.com/jkyalo-go/pesapal-demo/blob/master/requirements.txt) in the project root directory.
+
 
 ## 3. Installation
 Start the installation by installing and creating a virtual environment in your computer along with the listed requirements with `pip install <package-name>`
