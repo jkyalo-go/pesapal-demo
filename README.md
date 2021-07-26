@@ -14,8 +14,31 @@ This application allows a donor to enter his name, email or phone number, amount
 
 ## 2. Requirements
 
-## 3. Installation
+Here is a list of python libraries that are project dependencies.
+>asgiref
 
+>certifi
+
+>charset-normalizer
+
+>Django
+
+>idna
+
+>pesapal
+
+>pytz
+
+>requests
+
+>sqlparse
+
+>urllib3
+
+
+## 3. Installation
+Start the installation by installing and creating a virtual environment in your computer along with the listed requirements with `pip install <package-name>`
+>pip install Django
 ## 4. Configuration
 
 ## 5. Usage tips
