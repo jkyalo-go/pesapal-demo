@@ -54,6 +54,17 @@ Run `python manage.py makemigrations` to allow Django to propagate changes.
 
 In order for database and schema creation run the following command `python manage.py migrate`
 
+At this point you need a to create a super user on the terminal by issuing the following commands. `python manage.py craetesuperuser`. Here you will prompted to enter an admin username, optional email and a password.
+
+Run the Django development server with the following command `python manage.py runserver` **Nb: Do not close this terminal as the django test server process is running in it.**
+
+You also need to collect static assets with `python manage.py collectstatic`
+
+Open your browser at [http://localhost:8000/admin](http://localhost:8000/admin) and use tha admin credentials that you just set up.
+
+After login set up your pesapal consumer key and  consumer secret along with email credentials needed to set up a session for the purpose of emailing users who have set to an annual or monthly billing plan.
+
 ## 5. Usage tips
 
-[Evataa](http://evataa.com)
+Open your browser at [http://localhost:8000](http://localhost:8000) and the application should load.
+
