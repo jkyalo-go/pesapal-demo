@@ -20,5 +20,5 @@ from webapp import views
 
 urlpatterns = [
     path('', views.home_view, name='home'),
-    path('order/success/<str:reference>/', views.donation_complete, name='donated')
+    path('order/success/<str:order_reference_id>/', views.donation_complete, name='donated')
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

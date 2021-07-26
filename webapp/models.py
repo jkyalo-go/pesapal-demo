@@ -17,21 +17,17 @@ BILLING_PERIOD = [
 class UserContributionConf(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     amount = models.FloatField()
+    month = models.PositiveIntegerField(null=True, blank=True)
+    day = models.PositiveIntegerField(null=True, blank=True)
     next_billing_date = models.DateField(blank=True, null=True)
     bill_period = models.CharField(max_length=255, default=BILLING_PERIOD[0][0], choices=BILLING_PERIOD)
 
 
 # Model used to keep record of donations
-class Donation(models.Model):
-    donation_by = models.ForeignKey(User, on_delete=models.CASCADE)
-    amount = models.FloatField()
-    billed_on = models.DateField()
-
-
 # Email Conf used to send monthly/annual notifications to donors based on time schedule of their donations
 class EmailService(models.Model):
-    email_host = models.URLField()
-    email_host_port = models.IntegerField(default=587)
+    email_host = models.CharField(max_length=256)
+    email_host_port = models.IntegerField()
     email_address = models.EmailField()
     email_address_password = models.CharField(max_length=512)
 
@@ -65,6 +61,7 @@ class PesaPalOrder(models.Model):
     reference = models.CharField(max_length=256)
     tracking_id = models.CharField(max_length=256)
     amount = models.FloatField()
+    payment_status = models.CharField(max_length=256)
 
     def __str__(self):
         return str(self.user.email)

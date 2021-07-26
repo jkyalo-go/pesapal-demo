@@ -5,3 +5,4 @@ from webapp import models
 admin.site.register(models.PesaPalCredentials)
 admin.site.register(models.UserContributionConf)
 admin.site.register(models.PesaPalOrder)
+admin.site.register(models.EmailService)
