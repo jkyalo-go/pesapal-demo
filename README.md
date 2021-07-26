@@ -39,8 +39,11 @@ also included in [requirements.txt](https://github.com/jkyalo-go/pesapal-demo/bl
 
 
 ## 3. Installation
-Start the installation by installing and creating a virtual environment in your computer along with the listed requirements with `pip install <package-name>`
+Start the installation by creating a virtual environment in your computer along with the listed requirements with `pip install <package-name>`
+
 >pip install Django
+
+You may specify the python version when creating the virtual environment as follows `virtualenv -p <python-version> <virtualenv-name>`
 ## 4. Configuration
 
 ## 5. Usage tips
