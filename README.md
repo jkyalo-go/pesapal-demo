@@ -62,11 +62,11 @@ also included in [requirements.txt](https://github.com/jkyalo-go/pesapal-demo/bl
 
 * You also need to collect static assets with `python manage.py collectstatic`
 
-* Open your browser at [http://localhost:8000/admin](http://localhost:8000/admin) and use tha admin credentials that you just set up.
+* Open your browser at [http://localhost:8000/admin](http://localhost:8000/admin) and use the admin credentials that you just set up.
 
 * After login set up your pesapal consumer key and  consumer secret along with email credentials needed to set up a session for the purpose of emailing users who have set to an annual or monthly billing plan.
 
 ## 5. Usage tips
 
-* Open your browser at [http://localhost:8000](http://localhost:8000) and the application should load.
+* Open your browser at [http://localhost:8000](http://localhost:8000) to access the Donation form.
 
